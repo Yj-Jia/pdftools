@@ -36,6 +36,7 @@ def pdf_merge(new_file):
                     fname += char
             pdffiles.append(fname)
     pdffiles = str_sort(pdffiles)
+    print(pdffiles)
     new_pdf = open(new_file, 'wb')
     pdfWriter = PyPDF2.PdfFileWriter()
     objlist = []
